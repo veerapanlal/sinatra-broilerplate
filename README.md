@@ -16,6 +16,12 @@ A sample [Sinatra](http://www.sinatrarb.com/) application ready for deployment t
 * `$ git add *` (Make sure all new files are added to the repo)
 * `$ git commit -m 'first commit'`
 
+**Bootstrap**
+
+The layout view points to a css that needs to be built using bootstrap's makefile
+
+`$ make bootstrap`
+
 **Push to Heroku**
 
 * `$ heroku create [optional-app-name]` (You can rename your app with `heroku rename`)
