@@ -16,9 +16,9 @@ A sample [Sinatra](http://www.sinatrarb.com/) application ready for deployment t
 * `$ git add *` (Make sure all new files are added to the repo)
 * `$ git commit -m 'first commit'`
 
-**Bootstrap**
+**Build Bootstrap**
 
-The layout view points to a css that needs to be built using bootstrap's makefile
+The layout view points to a css file that needs to be built using bootstrap's makefile
 
 `$ make bootstrap`
 
