@@ -20,6 +20,8 @@ A sample [Sinatra](http://www.sinatrarb.com/) application ready for deployment t
 
 The layout view points to a css file that needs to be built using bootstrap's makefile
 
+`$ cd public`
+
 `$ make bootstrap`
 
 **Push to Heroku**
