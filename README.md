@@ -23,6 +23,10 @@ The layout view points to a css file that needs to be built using bootstrap's ma
 * `$ cd public`
 * `$ make bootstrap`
 
+**Test Locally using the [Unicorn](http://rubygems.org/gems/unicorn) gem**
+
+* `$ unicorn`
+
 **Push to Heroku**
 
 * `$ heroku create [optional-app-name]` (You can rename your app with `heroku rename`)
