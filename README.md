@@ -27,23 +27,14 @@ The layout view points to a css file that needs to be built using bootstrap's ma
 
 * `$ unicorn`
 
+Then just build.
+
 **Push to Heroku**
 
 * `$ heroku create [optional-app-name]` (You can rename your app with `heroku rename`)
 * `$ git push heroku master`
 
-[Heroku](http://devcenter.heroku.com/articles/git-submodules) currently dosen't support git submodules so the workaround is to track the submodule using the method below.
-
-<pre class="CodeRay" lang="term"><span class="c">$</span><span class="fu"> cd myapp
-</span><span class="c">$</span><span class="fu"> rm -rf `find . -mindepth 2 -name .git`
-</span><span class="c">$</span><span class="fu"> git rm --cache `git submodule | cut -f2 -d' '`
-</span><span class="c">$</span><span class="fu"> git rm .gitmodules
-</span><span class="c">$</span><span class="fu"> git add .
-</span><span class="c">$</span><span class="fu"> git config -l | grep '^submodule' | cut -d'=' -f1 | xargs -n1 git config --unset-all
-</span><span class="c">$</span><span class="fu"> git commit -m "brought submodules into the main repo"
-</span></pre>
-
-Then just build.
+Here's some helpful reading on [Heroku](https://devcenter.heroku.com/articles/git-submodules) and GIT submodules.
 
 [More info](http://devcenter.heroku.com/articles/rack) using Rack apps in Heroku, and be sure to check out the Sinatra [starter guide](http://www.sinatrarb.com/intro).
 
