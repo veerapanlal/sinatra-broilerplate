@@ -13,15 +13,16 @@ end
 
 # Routes
 
-#get '/' do
-  #erb :frontpage
-#end
+get '/' do
+  @title = 'Prototype'
+  erb :index
+end
 
 #get '/gallery' do
   #erb :gallery
 #end
 
-#get '/' do
+#get '/forms' do
   #erb :forms
 #end
 
@@ -42,11 +43,11 @@ end
 # Partials
 
 helpers do
-
-  def partial template
-    erb template.to_sym, :layout => false
+  def render_partial(template, args = {})
+    template_array = template.to_s.split('/')
+    template = template_array[0..-2].join('/') + "/_#{template_array[-1]}"
+    erb(template.to_sym, :locals => args, :layout => false)
   end
-
 end
 
 # Test at <appname>.heroku.com
