@@ -45,6 +45,6 @@ The layout view points to a css file that needs to be built using bootstrap's ma
 
 Then just build.
 
-[More info](http://devcenter.heroku.com/articles/rack) using Rack apps in Heroku.
+[More info](http://devcenter.heroku.com/articles/rack) using Rack apps in Heroku, and be sure to check out the Sinatra [starter guide](http://www.sinatrarb.com/intro).
 
 *Inspired by Blake Mizerany's [Sinatra-Heroku-App](https://github.com/bmizerany/heroku-sinatra-app).*

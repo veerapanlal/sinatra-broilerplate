@@ -26,10 +26,6 @@ end
   #erb :forms
 #end
 
-#get '/blog' do
-  #erb :blog
-#end
-
 # Errors
 
 not_found do
@@ -38,6 +34,12 @@ end
 
 error do
   erb :'500'
+end
+
+# Redirects
+
+get '/twitter' do
+  redirect 'http://twitter.com'
 end
 
 # Partials
