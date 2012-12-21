@@ -1,3 +1,11 @@
-# As suggested in the Dev Center @ Heroku http://devcenter.heroku.com/articles/bundler
-.bundle
+# Global
 .DS_Store
+
+# Bundler
+.bundle
+
+# Ruby
+.rvmrc
+
+# Style
+.sass-cache
