@@ -20,12 +20,6 @@ class App < Sinatra::Base
       '/css/*.css'
     ]
 
-    # The second parameter here is optional (see above).
-    # It will default to '/css/#{name}.css'.
-    css :more, '/css/more.css', [
-      '/css/more/*.css'
-    ]
-
     prebuild true
   end
 
