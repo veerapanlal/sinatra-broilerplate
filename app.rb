@@ -8,20 +8,32 @@ class App < Sinatra::Base
   register Sinatra::AssetPack
 
   assets do
+
     #js_compression :closure
     js_compression :uglify
 
-    js :main, '/js/main.js', [
-      '/js/vendor/*.js',
+    serve '/js', from: '/app/js'
+    js :application, [
+      '/js/vendor/jquery.js',
+      '/js/vendor/jquery.*.js',
+      '/js/vendor/underscore.js',
+      '/js/vendor/bootstrap.js',
       '/js/app.js'
     ]
 
-    css :main, [
-      '/css/*.css'
+    css_compression :sass
+
+    serve '/css', from: '/app/css'
+    css :application, [
+      '/css/bootstrap/bootstrap.css',
+      '/css/bootstrap/bootstrap-responsive.css',
+      '/css/app.css'
     ]
 
     prebuild true
   end
+
+  # Routes
 
   get '/' do
     erb :index

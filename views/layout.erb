@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title><%= @title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%= css :main %>
+    <%= css :application %>
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -17,8 +17,8 @@
           <%= yield %>
         </div><!--/span-->
       </div><!--/row-->
-    <%= render_partial 'partials/footer' %>
+      <%= render_partial 'partials/footer' %>
     </div><!--/.fluid-container-->
-    <%= js  :main %>
+    <%= js  :application %>
   </body>
 </html>

@@ -1,5 +1,21 @@
 // This is scss
 
+$black: #333;
+
+body {
+  padding-top: 60px;
+}
+
+.sidebar-nav {
+  padding: 9px 0;
+}
+
+.hero-unit,
+footer {
+  text-align: center;
+  color: $black;
+}
+
 #image_embedding_test {
   background: url(/images/icon.png?embed);
   width: 16px;
@@ -13,16 +29,5 @@
   background: url(/images/icon.png);
 }
 
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
 
-.sidebar-nav {
-  padding: 9px 0;
-}
 
-.hero-unit,
-footer {
-  text-align: center;
-}
