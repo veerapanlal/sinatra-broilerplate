@@ -9,6 +9,6 @@ A simple [Sinatra](http://www.sinatrarb.com/) application ready for rapid protot
 
 **Deploy locally**
 
-* `$ unicorn`
+* `$ ruby app.rb`
 
 Then just build.

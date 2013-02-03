@@ -1,3 +1,6 @@
-require 'rake'
+$:.unshift File.expand_path('../../lib', __FILE__)
 
-Dir["#{File.dirname(__FILE__)}/lib/tasks/**/*.rake"].sort.each { |ext| load ext }
+APP_FILE  = 'app.rb'
+APP_CLASS = 'App'
+
+require 'sinatra/assetpack/rake'
