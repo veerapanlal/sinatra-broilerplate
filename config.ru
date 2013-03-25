@@ -1,7 +1,10 @@
 require 'rubygems'
+require 'sinatra'
 require 'bundler'
 
-Bundler.require
+root_dir = File.dirname(__FILE__)
 
-require './app.rb'
-run Sinatra::Application
+Bundler.require
+require File.join(root_dir + "/app.rb")
+
+run App
